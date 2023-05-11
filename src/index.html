@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Peluquería "Jeanelly Adames"</title>
-  <link rel="stylesheet" href="index.css">
+  <script type="module" src="index.js"></script>
 </head>
 <body class="min-h-screen bg-gray-100">
   <header>
@@ -28,43 +28,103 @@
         </div>
       </div>
       <div class="bg-pink-400 w-4/5 mx-auto mt-10 py-10 px-4 shadow-xl rounded-lg flex items-center justify-between">
-        <button class="bg-white rounded-lg shadow-lg">
-          <img class="w-16" src="./assets/icons/chevron-left.svg">
+        <button class="bg-white rounded-lg shadow-lg disabled:brightness-75 disabled:shadow-none transition-all" id="prev">
+          <img class="w-16 pointer-events-none" src="./assets/icons/chevron-left.svg">
         </button>
-        <div class="flex justify-center gap-x-6 p-4 bg-white rounded-lg">
-          <img class="w-80 h-60 rounded-lg object-cover" src="./assets/images/trenzas.webp" alt="Imagen de ejemplo de: Lorem Picsum">
-          <div class="w-80">
-            <h4 class="text-pink-500 text-center font-semibold text-3xl">Trenzas</h4>
-            <p class="mt-3 font-semibold line-clamp-2">
-              Un pequeño texto sobre el peinado que describa sus cuestiones.
-            </p>
-            <ul class="p-2 mt-3 flex flex-col gap-2">
-              <li class="flex gap-x-1 items-center">
-                <img class="w-8 h-8" src="./assets/icons/check.svg">
-                <p>
-                  Característica <span class="font-bold text-pink-500">buena</span> del peinado
-                </p>
-              </li>
-              <li class="flex gap-x-1 items-center">
-                <img class="w-8 h-8" src="./assets/icons/check.svg">
-                <p>
-                  Otra <span class="font-bold text-pink-500">característica</span> muy interesante
-                </p>
-              </li>
-              <li class="flex gap-x-1 items-center">
-                <img class="w-8 h-8 text-blue-700" src="./assets/icons/check.svg">
-                <p>
-                  No se olviden de <span class="font-bold text-pink-500">destacar</span> esto
-                </p>
-              </li>
-            </ul>
+        <div class="w-4/5 overflow-x-hidden flex" id="slider">
+          <!-- TODO -> que el slider cambié de color según el slide. Y que cada slide tenga color custom -->
+          <div class="flex justify-center gap-x-6 p-4 bg-white rounded-lg w-full shrink-0 transition-all" data-slide="teal">
+            <img class="w-80 h-60 rounded-lg object-cover" src="./assets/images/trenzas.webp" alt="Imagen de ejemplo de: Lorem Picsum">
+            <div class="w-80">
+              <h4 class="text-pink-500 text-center font-semibold text-3xl">Trenzas</h4>
+              <p class="mt-3 font-semibold line-clamp-2">
+                Un pequeño texto sobre el peinado que describa sus cuestiones.
+              </p>
+              <ul class="p-2 mt-3 flex flex-col gap-2">
+                <li class="flex gap-x-1 items-center">
+                  <img class="w-8 h-8" src="./assets/icons/check.svg">
+                  <p class="line-clamp-1">
+                    Característica <span class="font-bold text-pink-500">buena</span> del peinado
+                  </p>
+                </li>
+                <li class="flex gap-x-1 items-center">
+                  <img class="w-8 h-8" src="./assets/icons/check.svg">
+                  <p class="line-clamp-1">
+                    Otra <span class="font-bold text-pink-500">característica</span> muy interesante
+                  </p>
+                </li>
+                <li class="flex gap-x-1 items-center">
+                  <img class="w-8 h-8 text-blue-700" src="./assets/icons/check.svg">
+                  <p class="line-clamp-1">
+                    No se olviden de <span class="font-bold text-pink-500">destacar</span> esto
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex justify-center gap-x-6 p-4 bg-white rounded-lg w-full shrink-0 transition-all" data-slide="indigo">
+            <img class="w-80 h-60 rounded-lg object-cover" src="./assets/images/ponytail.jpg" alt="Imagen de ejemplo de: Lorem Picsum">
+            <div class="w-80">
+              <h4 class="text-pink-500 text-center font-semibold text-3xl">Ponytail</h4>
+              <p class="mt-3 font-semibold line-clamp-2">
+                Un pequeño texto sobre el peinado que describa sus cuestiones.
+              </p>
+              <ul class="p-2 mt-3 flex flex-col gap-2">
+                <li class="flex gap-x-1 items-center">
+                  <img class="w-8 h-8" src="./assets/icons/check.svg">
+                  <p class="line-clamp-1">
+                    Característica <span class="font-bold text-pink-500">buena</span> del peinado
+                  </p>
+                </li>
+                <li class="flex gap-x-1 items-center">
+                  <img class="w-8 h-8" src="./assets/icons/check.svg">
+                  <p class="line-clamp-1">
+                    Otra <span class="font-bold text-pink-500">característica</span> muy interesante
+                  </p>
+                </li>
+                <li class="flex gap-x-1 items-center">
+                  <img class="w-8 h-8 text-blue-700" src="./assets/icons/check.svg">
+                  <p class="line-clamp-1">
+                    No se olviden de <span class="font-bold text-pink-500">destacar</span> esto
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex justify-center gap-x-6 p-4 bg-white rounded-lg w-full shrink-0 transition-all" data-slide="purple">
+            <img class="w-80 h-60 rounded-lg object-cover" src="./assets/images/secado.webp" alt="Imagen de ejemplo de: Lorem Picsum">
+            <div class="w-80">
+              <h4 class="text-pink-500 text-center font-semibold text-3xl">Secado</h4>
+              <p class="mt-3 font-semibold line-clamp-2">
+                Un pequeño texto sobre el peinado que describa sus cuestiones.
+              </p>
+              <ul class="p-2 mt-3 flex flex-col gap-2">
+                <li class="flex gap-x-1 items-center">
+                  <img class="w-8 h-8" src="./assets/icons/check.svg">
+                  <p class="line-clamp-1">
+                    Característica <span class="font-bold text-pink-500">buena</span> del peinado
+                  </p>
+                </li>
+                <li class="flex gap-x-1 items-center">
+                  <img class="w-8 h-8" src="./assets/icons/check.svg">
+                  <p class="line-clamp-1">
+                    Otra <span class="font-bold text-pink-500">característica</span> muy interesante
+                  </p>
+                </li>
+                <li class="flex gap-x-1 items-center">
+                  <img class="w-8 h-8 text-blue-700" src="./assets/icons/check.svg">
+                  <p class="line-clamp-1">
+                    No se olviden de <span class="font-bold text-pink-500">destacar</span> esto
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <button class="bg-white rounded-lg shadow-lg">
-          <img class="w-16" src="./assets/icons/chevron-right.svg">
+        <button class="bg-white rounded-lg shadow-lg disabled:brightness-75 disabled:shadow-none transition-all" id="next">
+          <img class="w-16 pointer-events-none" src="./assets/icons/chevron-right.svg">
         </button>
       </div>
-
     </section>
     <section id="contact-us">
       <!-- Contáctanos -->
