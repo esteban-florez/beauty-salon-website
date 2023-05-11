@@ -7,33 +7,34 @@
   <title>Peluquería "Jeanelly Adames"</title>
   <script type="module" src="index.js"></script>
 </head>
-<body class="min-h-screen bg-gray-100">
+<body>
   <header>
 
   </header>
-  <main class="max-w-7xl mx-auto bg-white shadow pb-10 px-20">
+  <main class="pb-20">
     <section id="about-us">
       <!-- Hero + Sobre nosotros -->
     </section>
     <section id="services">
       <!-- Servicios -->
     </section>
-    <section class="pt-10" id="galery">
+    <section class="p-20" id="galery">
       <!-- Nuestro trabajo -->
+      <!-- TODO -> añadir unas cards con fotos y tal debajo del carrusel pa que no se vea tan simple esta sección -->
       <div class="flex items-center px-28 gap-2">
         <img class="bg-pink-400 w-12 h-12 rounded-full p-2" src="./assets/icons/book.svg">
         <div>
           <h2 class="text-center text-2xl font-semibold">¡Un gran catálogo de peinados, manicure y pedicure!</h2>
-          <h3 class="uppercase text-pink-400 font-bold tracking-tighter text-sm">Nuestro trabajo</h3>
+          <h3 class="uppercase text-pink-400 font-bold tracking-tighter">Nuestro trabajo</h3>
         </div>
       </div>
-      <div class="bg-pink-400 w-4/5 mx-auto mt-10 py-10 px-4 shadow-xl rounded-lg flex items-center justify-between">
+      <div class="bg-pink-400 w-4/5 mx-auto mt-10 py-10 px-6 shadow-xl rounded-lg flex items-center justify-between">
         <button class="bg-white rounded-lg shadow-lg disabled:brightness-75 disabled:shadow-none transition-all" id="prev">
           <img class="w-16 pointer-events-none" src="./assets/icons/chevron-left.svg">
         </button>
-        <div class="w-4/5 overflow-x-hidden flex" id="slider">
+        <div class="w-4/5 overflow-x-hidden flex bg-white rounded-lg" id="slider">
           <!-- TODO -> que el slider cambié de color según el slide. Y que cada slide tenga color custom -->
-          <div class="flex justify-center gap-x-6 p-4 bg-white rounded-lg w-full shrink-0 transition-all" data-slide="teal">
+          <div class="flex justify-center gap-x-6 p-4 bg-white rounded-lg w-full shrink-0 transition-transform" data-slide="teal">
             <img class="w-80 h-60 rounded-lg object-cover" src="./assets/images/trenzas.webp" alt="Imagen de ejemplo de: Lorem Picsum">
             <div class="w-80">
               <h4 class="text-pink-500 text-center font-semibold text-3xl">Trenzas</h4>
@@ -62,7 +63,7 @@
               </ul>
             </div>
           </div>
-          <div class="flex justify-center gap-x-6 p-4 bg-white rounded-lg w-full shrink-0 transition-all" data-slide="indigo">
+          <div class="flex justify-center gap-x-6 p-4 bg-white rounded-lg w-full shrink-0 transition-transform" data-slide="indigo">
             <img class="w-80 h-60 rounded-lg object-cover" src="./assets/images/ponytail.jpg" alt="Imagen de ejemplo de: Lorem Picsum">
             <div class="w-80">
               <h4 class="text-pink-500 text-center font-semibold text-3xl">Ponytail</h4>
@@ -91,7 +92,7 @@
               </ul>
             </div>
           </div>
-          <div class="flex justify-center gap-x-6 p-4 bg-white rounded-lg w-full shrink-0 transition-all" data-slide="purple">
+          <div class="flex justify-center gap-x-6 p-4 bg-white rounded-lg w-full shrink-0 transition-transform" data-slide="purple">
             <img class="w-80 h-60 rounded-lg object-cover" src="./assets/images/secado.webp" alt="Imagen de ejemplo de: Lorem Picsum">
             <div class="w-80">
               <h4 class="text-pink-500 text-center font-semibold text-3xl">Secado</h4>
@@ -126,8 +127,54 @@
         </button>
       </div>
     </section>
-    <section id="contact-us">
+    <section class="p-20 bg-pink-400 text-white shadow-lg" id="contact-us">
       <!-- Contáctanos -->
+      <div class="flex items-center px-28 gap-2">
+        <img class="bg-white w-12 h-12 rounded-full p-2" src="./assets/icons/chat.svg">
+        <div>
+          <h2 class="text-center text-2xl font-semibold">¡Envíanos tus opiniones, sugerencias, o lo que quieras decirnos!</h2>
+          <h3 class="uppercase text-pink-800 font-bold tracking-tighter">Contáctanos</h3>
+        </div>
+      </div>
+      <div class="flex gap-8 justify-between px-32 mt-10">
+        <form class="bg-white text-black w-3/5 rounded-xl shadow-lg p-6 flex flex-col gap-6">
+          <div>
+            <label class="flex items-center gap-1 font-semibold text-pink-500 mb-2" for="name">
+              <img class="h-6 w-6" src="./assets/icons/user-circle.svg">
+              Nombre:
+            </label>
+            <input class="bg-gray-200 shadow-inner rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 py-2 px-4 w-full" type="text" name="name" id="name" placeholder="Escribe tu nombre...">
+          </div>
+          <div>
+            <label class="flex items-center gap-1 font-semibold text-pink-500 mb-2" for="phone">
+              <img class="h-6 w-6" src="./assets/icons/phone.svg">
+              Teléfono:
+            </label>
+            <input class="bg-gray-200 shadow-inner rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 py-2 px-4 w-full" type="text" name="phone" id="phone" placeholder="Escribe tu número de teléfono...">
+          </div>
+          <div>
+            <label class="flex items-center gap-1 font-semibold text-pink-500 mb-2" for="email">
+              <img class="h-6 w-6" src="./assets/icons/at-symbol.svg">
+              Correo electrónico:
+            </label>
+            <input class="bg-gray-200 shadow-inner rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 py-2 px-4 w-full" type="email" name="email" id="email" placeholder="Escribe tu correo electrónico...">
+          </div>
+          <div>
+            <label class="flex items-center gap-1 font-semibold text-pink-500 mb-2" 
+            for="feedback">
+              <img class="h-6 w-6" src="./assets/icons/chat-bubbles.svg">
+              ¿Que quieres comentarnos?
+            </label>
+            <textarea class="bg-gray-200 shadow-inner rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 py-2 px-4 w-full resize-none" rows="3" name="feedback" id="feedback" placeholder="Escribe tus sugerencias, opiniones o ideas..."></textarea>    
+          </div>
+          <button class="bg-pink-400 text-white rounded-lg py-3 text-xl font-semibold flex items-center justify-center transition-colors group gap-1 hover:bg-pink-500 shadow-xl active:bg-pink-600 focus:outline-none focus:ring focus:ring-pink-300" type="submit">
+            <svg class="h-6 w-6 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+            </svg>
+            ¡Contáctanos!
+          </button>
+        </form>
+      </div>
     </section>
   </main>
   <footer>
