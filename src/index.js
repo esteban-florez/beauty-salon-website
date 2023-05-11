@@ -1,2 +1,2 @@
 import './index.css'
-import './galery.js'
+import './galery/main.js'
