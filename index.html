@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Peluquería "Jeanelly Adames"</title>
-  <script type="module" src="index.js"></script>
+  <script type="module" src="./src/index.js"></script>
 </head>
 <body>
   <header>
@@ -22,7 +22,7 @@
       <!-- Nuestro trabajo -->
       <!-- TODO -> añadir unas cards con fotos y tal debajo del carrusel pa que no se vea tan simple esta sección -->
       <div class="flex items-center px-28 gap-2">
-        <img class="bg-pink-400 w-12 h-12 rounded-full p-2" src="./assets/icons/book.svg">
+        <img class="bg-pink-400 w-12 h-12 rounded-full p-2" src="/icons/book.svg">
         <div>
           <h2 class="text-center text-2xl font-semibold">¡Un gran catálogo de peinados, manicure y pedicure!</h2>
           <h3 class="uppercase text-pink-400 font-bold tracking-tighter">Nuestro trabajo</h3>
@@ -30,12 +30,12 @@
       </div>
       <div class="bg-pink-400 w-4/5 mx-auto mt-10 py-10 px-6 shadow-xl rounded-lg flex items-center justify-between">
         <button class="bg-white rounded-lg shadow-lg disabled:brightness-75 disabled:shadow-none transition-all" id="prev">
-          <img class="w-16 pointer-events-none" src="./assets/icons/chevron-left.svg">
+          <img class="w-16 pointer-events-none" src="/icons/chevron-left.svg">
         </button>
         <div class="w-4/5 overflow-x-hidden flex bg-white rounded-lg" id="slider">
           <!-- TODO -> que el slider cambié de color según el slide. Y que cada slide tenga color custom -->
           <div class="flex justify-center gap-x-6 p-4 bg-white rounded-lg w-full shrink-0 transition-transform" data-slide="teal">
-            <img class="w-80 h-60 rounded-lg object-cover" src="./assets/images/trenzas.webp" alt="Imagen de ejemplo de: Lorem Picsum">
+            <img class="w-80 h-60 rounded-lg object-cover" src="/images/trenzas.webp" alt="Imagen de ejemplo de: Lorem Picsum">
             <div class="w-80">
               <h4 class="text-pink-500 text-center font-semibold text-3xl">Trenzas</h4>
               <p class="mt-3 font-semibold line-clamp-2">
@@ -43,19 +43,19 @@
               </p>
               <ul class="p-2 mt-3 flex flex-col gap-2">
                 <li class="flex gap-x-1 items-center">
-                  <img class="w-8 h-8" src="./assets/icons/check.svg">
+                  <img class="w-8 h-8" src="/icons/check.svg">
                   <p class="line-clamp-1">
                     Característica <span class="font-bold text-pink-500">buena</span> del peinado
                   </p>
                 </li>
                 <li class="flex gap-x-1 items-center">
-                  <img class="w-8 h-8" src="./assets/icons/check.svg">
+                  <img class="w-8 h-8" src="/icons/check.svg">
                   <p class="line-clamp-1">
                     Otra <span class="font-bold text-pink-500">característica</span> muy interesante
                   </p>
                 </li>
                 <li class="flex gap-x-1 items-center">
-                  <img class="w-8 h-8 text-blue-700" src="./assets/icons/check.svg">
+                  <img class="w-8 h-8 text-blue-700" src="/icons/check.svg">
                   <p class="line-clamp-1">
                     No se olviden de <span class="font-bold text-pink-500">destacar</span> esto
                   </p>
@@ -64,7 +64,7 @@
             </div>
           </div>
           <div class="flex justify-center gap-x-6 p-4 bg-white rounded-lg w-full shrink-0 transition-transform" data-slide="indigo">
-            <img class="w-80 h-60 rounded-lg object-cover" src="./assets/images/ponytail.jpg" alt="Imagen de ejemplo de: Lorem Picsum">
+            <img class="w-80 h-60 rounded-lg object-cover" src="/images/ponytail.jpg" alt="Imagen de ejemplo de: Lorem Picsum">
             <div class="w-80">
               <h4 class="text-pink-500 text-center font-semibold text-3xl">Ponytail</h4>
               <p class="mt-3 font-semibold line-clamp-2">
@@ -72,19 +72,19 @@
               </p>
               <ul class="p-2 mt-3 flex flex-col gap-2">
                 <li class="flex gap-x-1 items-center">
-                  <img class="w-8 h-8" src="./assets/icons/check.svg">
+                  <img class="w-8 h-8" src="/icons/check.svg">
                   <p class="line-clamp-1">
                     Característica <span class="font-bold text-pink-500">buena</span> del peinado
                   </p>
                 </li>
                 <li class="flex gap-x-1 items-center">
-                  <img class="w-8 h-8" src="./assets/icons/check.svg">
+                  <img class="w-8 h-8" src="/icons/check.svg">
                   <p class="line-clamp-1">
                     Otra <span class="font-bold text-pink-500">característica</span> muy interesante
                   </p>
                 </li>
                 <li class="flex gap-x-1 items-center">
-                  <img class="w-8 h-8 text-blue-700" src="./assets/icons/check.svg">
+                  <img class="w-8 h-8 text-blue-700" src="/icons/check.svg">
                   <p class="line-clamp-1">
                     No se olviden de <span class="font-bold text-pink-500">destacar</span> esto
                   </p>
@@ -93,7 +93,7 @@
             </div>
           </div>
           <div class="flex justify-center gap-x-6 p-4 bg-white rounded-lg w-full shrink-0 transition-transform" data-slide="purple">
-            <img class="w-80 h-60 rounded-lg object-cover" src="./assets/images/secado.webp" alt="Imagen de ejemplo de: Lorem Picsum">
+            <img class="w-80 h-60 rounded-lg object-cover" src="/images/secado.webp" alt="Imagen de ejemplo de: Lorem Picsum">
             <div class="w-80">
               <h4 class="text-pink-500 text-center font-semibold text-3xl">Secado</h4>
               <p class="mt-3 font-semibold line-clamp-2">
@@ -101,19 +101,19 @@
               </p>
               <ul class="p-2 mt-3 flex flex-col gap-2">
                 <li class="flex gap-x-1 items-center">
-                  <img class="w-8 h-8" src="./assets/icons/check.svg">
+                  <img class="w-8 h-8" src="/icons/check.svg">
                   <p class="line-clamp-1">
                     Característica <span class="font-bold text-pink-500">buena</span> del peinado
                   </p>
                 </li>
                 <li class="flex gap-x-1 items-center">
-                  <img class="w-8 h-8" src="./assets/icons/check.svg">
+                  <img class="w-8 h-8" src="/icons/check.svg">
                   <p class="line-clamp-1">
                     Otra <span class="font-bold text-pink-500">característica</span> muy interesante
                   </p>
                 </li>
                 <li class="flex gap-x-1 items-center">
-                  <img class="w-8 h-8 text-blue-700" src="./assets/icons/check.svg">
+                  <img class="w-8 h-8 text-blue-700" src="/icons/check.svg">
                   <p class="line-clamp-1">
                     No se olviden de <span class="font-bold text-pink-500">destacar</span> esto
                   </p>
@@ -123,14 +123,14 @@
           </div>
         </div>
         <button class="bg-white rounded-lg shadow-lg disabled:brightness-75 disabled:shadow-none transition-all" id="next">
-          <img class="w-16 pointer-events-none" src="./assets/icons/chevron-right.svg">
+          <img class="w-16 pointer-events-none" src="/icons/chevron-right.svg">
         </button>
       </div>
     </section>
     <section class="p-20 bg-pink-400 text-white shadow-lg" id="contact-us">
       <!-- Contáctanos -->
       <div class="flex items-center px-28 gap-2">
-        <img class="bg-white w-12 h-12 rounded-full p-2" src="./assets/icons/chat.svg">
+        <img class="bg-white w-12 h-12 rounded-full p-2" src="/icons/chat.svg">
         <div>
           <h2 class="text-center text-2xl font-semibold">¡Envíanos tus opiniones, sugerencias, o lo que quieras decirnos!</h2>
           <h3 class="uppercase text-pink-800 font-bold tracking-tighter">Contáctanos</h3>
@@ -140,21 +140,21 @@
         <form class="bg-white text-black w-3/5 rounded-xl shadow-lg p-6 flex flex-col gap-6">
           <div>
             <label class="flex items-center gap-1 font-semibold text-pink-500 mb-2" for="name">
-              <img class="h-6 w-6" src="./assets/icons/user-circle.svg">
+              <img class="h-6 w-6" src="/icons/user-circle.svg">
               Nombre:
             </label>
             <input class="bg-gray-200 shadow-inner rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 py-2 px-4 w-full" type="text" name="name" id="name" placeholder="Escribe tu nombre...">
           </div>
           <div>
             <label class="flex items-center gap-1 font-semibold text-pink-500 mb-2" for="phone">
-              <img class="h-6 w-6" src="./assets/icons/phone.svg">
+              <img class="h-6 w-6" src="/icons/phone.svg">
               Teléfono:
             </label>
             <input class="bg-gray-200 shadow-inner rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 py-2 px-4 w-full" type="text" name="phone" id="phone" placeholder="Escribe tu número de teléfono...">
           </div>
           <div>
             <label class="flex items-center gap-1 font-semibold text-pink-500 mb-2" for="email">
-              <img class="h-6 w-6" src="./assets/icons/at-symbol.svg">
+              <img class="h-6 w-6" src="/icons/at-symbol.svg">
               Correo electrónico:
             </label>
             <input class="bg-gray-200 shadow-inner rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 py-2 px-4 w-full" type="email" name="email" id="email" placeholder="Escribe tu correo electrónico...">
@@ -162,7 +162,7 @@
           <div>
             <label class="flex items-center gap-1 font-semibold text-pink-500 mb-2" 
             for="feedback">
-              <img class="h-6 w-6" src="./assets/icons/chat-bubbles.svg">
+              <img class="h-6 w-6" src="/icons/chat-bubbles.svg">
               ¿Que quieres comentarnos?
             </label>
             <textarea class="bg-gray-200 shadow-inner rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 py-2 px-4 w-full resize-none" rows="3" name="feedback" id="feedback" placeholder="Escribe tus sugerencias, opiniones o ideas..."></textarea>    
