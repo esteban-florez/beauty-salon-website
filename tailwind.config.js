@@ -5,7 +5,11 @@ export default {
     "./src/**/*.js"
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'heroCard': "url('/images/cardFondo.png')",
+      }
+    },
   },
   plugins: [],
 }

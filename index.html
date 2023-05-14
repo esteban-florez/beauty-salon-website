@@ -11,12 +11,39 @@
   <header>
 
   </header>
-  <main class="pb-20">
+  <main>
     <section id="about-us">
       <!-- Hero + Sobre nosotros -->
+      <img class="w-full h-[30rem] object-cover" src="/images/hero.jpg" alt="fondo de la peluqueria">
+      <!-- la foto va a cambiar denme chance pa conseguir una bomnita, igual q los testos -->
+      <div class="lg:w-5/12 sm:w-3/5 w-full sm:px-0 px-10 text-center text-white font-semibold absolute inset-y-14 sm:inset-x-32">
+        <h1 class="text-4xl">ESLOGAN LLAMATIVO</h1>
+        <p class="my-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis laborum non quidem alias ipsa veritatis quibusdam animi unde, iste dolor placeat molestiae dolorem aspernatur beatae. </p>
+        <button class="bg-pink-400 rounded-3xl py-2 px-10">¡Contáctanos!</button>
+      </div>
+      <div class="flex justify-center">
+        <div class="w-[60%] h-20 absolute bg-heroCard bg-cover inset-y-80"></div>
+        <div class="w-3/5 lg:h-[22.5rem] md:h-[17.5rem] h-[22.5rem] bg-slate-50 rounded-3xl rounded-t-none absolute inset-y-96 shadow-2xl px-10">
+          <div class="grid lg:grid-cols-2 items-center">
+            <div class="h-[22rem] overflow-hidden">
+              <h4 class="text-pink-400 text-center text-2xl font-bold">Sobre Nosotros</h4>
+              <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sed exercitationem ratione, totam, saepe aliquid commodi dignissimos officia mollitia tempora dolorem eveniet laboriosam mas meu deus caraho jodelho y esas cosas.</p>
+              <h4 class="text-pink-400 text-center text-2xl font-bold pt-5">horarios</h3>
+              <div class="flex justify-between">
+                <p>Lunes a viernes <br> Sabado a Domingo</p>
+                <p>8am a 3pm <br> 9am a 2pm</p>
+              </div>
+            </div>
+            <div class="flex justify-center invisible lg:visible">
+              <img class="h-72 w-3/4 object-cover rounded shadow" src="/images/coso.jpg" alt="imagen">
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section id="services">
+    <section class="p-20 bg-pink-400" id="services">
       <!-- Servicios -->
+      <div class="pt-56"></div>
     </section>
     <section class="p-20" id="galery">
       <!-- Nuestro trabajo -->
@@ -177,8 +204,43 @@
       </div>
     </section>
   </main>
-  <footer>
-
+  <footer class="py-10 bg-black text-white">
+    <div class="flex justify-center items-center gap-2 pb-6">
+      <img class="bg-pink-400 w-12 h-12 rounded-full p-2" src="/icons/book.svg">
+      <h1 class="text-2xl font-semibold">Peluqueria Jeanelly Adames</h1>
+    </div>
+    <section class="grid md:grid-cols-3 gap-5">
+      <div>
+        <div class="flex justify-center items-center pr-5">
+          <img class="w-12 h-12 p-2" src="/icons/phone.svg">
+          <h4 class="text-lg font-semibold">Teléfonos</h4>
+        </div>
+        <p class="text-center">+58 0424-3377034</p>
+        <p class="text-center">+58 0424-3377034</p>
+      </div>
+      <div>
+        <div class="flex justify-center items-center pb-3">
+          <img class="h-6 w-6 mr-2" src="/icons/phone.svg">
+          <h4 class="text-lg font-semibold">Redes sociales</h4>
+        </div>
+        <div class="flex justify-center items-center mb-2">
+          <a href="#" class="flex justify-center">
+            <img class="h-6 w-6 mr-2" src="/icons/whatsapp.svg">
+            <p>WhatsApp</p>
+          </a>
+        </div>
+        <div class="flex justify-center items-center mb-2">
+          <a href="#" class="flex justify-center">
+            <img class="h-6 w-6 mr-2" src="/icons/instagram.svg">
+            <p>Instagram</p>
+          </a>
+        </div>
+      </div>
+      <div class="flex justify-center">Dirección</div>
+    </section>
+    <div class="flex justify-center pt-6">
+      Copirai 2023  |  derechos e izquierdos y lo que vaya aquí
+    </div>
   </footer>
 </body>
 </html>
