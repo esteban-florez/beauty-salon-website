@@ -2,10 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Lobster';
+  src: url('/Lobster-Regular.ttf');
+}
+
 [data-slide] {
   transition-duration: 600ms;
 }
 
 .bg-instagram {
   background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+}
+
+.bg-hero {
+  background-image: url('/images/hero.jpg');
+  background-size: cover;
 }

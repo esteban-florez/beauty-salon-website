@@ -11,7 +11,7 @@ export default {
       },
 
       backgroundImage: {
-        'heroCard': "url('/images/cardFondo.png')",
+        'fondo-card': "url('/images/fondo-card.png')",
       },
     },
   },

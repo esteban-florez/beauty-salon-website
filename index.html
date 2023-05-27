@@ -5,80 +5,67 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <title>Peluquería "Jeanelly Adames"</title>
   <script type="module" src="./src/index.js"></script>
 </head>
 
 <body>
-  <header class="h-5,2 bg-white flex justify-between p-5">
-    <div class="flex gap-1 ml-[10rem] items-center">
-      <img src="public/images/logo-header.jpg" alt="logo del encabezado" class="h-12 w-12 rounded-full">
+  <header class="bg-white flex justify-between py-4 px-40 shadow-md">
+    <div class="flex gap-1 items-center">
+      <img src="/images/logo-header.jpg" alt="logo del encabezado" class="h-12 w-12 rounded-full">
       <h3 class="text-center font-lobster text-xl">
-        Salón de Belleza Jeanelly
-        <br>
-        ADAMES
+        Salón de Belleza "Jeanelly Adames"
       </h3>
     </div>
-
-    <div class="flex gap-7 mr-[22.5rem]">
-      <button type="button" id="about-us">
-        Inicio
-      </button>
-      <button type="button" id="services">
+    <div class="flex items-center gap-6">
+      <a class="text-pink-500 border-2 border-pink-400 font-semibold rounded-md px-4 py-1 hover:bg-pink-400 hover:text-white transition-colors shadow" href="#services">
         Servicios
-      </button>
-      <Button type="button" id="galery">
-        Nosotros
-      </Button>
-      <button type="button" id="contact-us">
+      </a>
+      <a class="text-pink-500 border-2 border-pink-400 font-semibold rounded-md px-4 py-1 hover:bg-pink-400 hover:text-white transition-colors shadow" href="#galery">
+        Nuestro trabajo
+      </a>
+      <a class="text-pink-500 border-2 border-pink-400 font-semibold rounded-md px-4 py-1 hover:bg-pink-400 hover:text-white transition-colors shadow" href="#contact-us">
         Contacto
-      </button>
+      </a>
     </div>
   </header>
   <main>
-    <section id="about-us">
-      <!-- Hero + Sobre nosotros -->
-      <img class="w-full h-[30rem] object-cover" src="/images/hero.jpg" alt="fondo de la peluqueria">
+    <!-- Hero + Sobre nosotros -->
+    <section class="pt-20 px-20 pb-72 bg-hero grid place-items-center relative after:w-full after:h-full after:bg-black after:opacity-75 after:absolute after:inset-0" id="about-us">
       <!-- la foto va a cambiar denme chance pa conseguir una bomnita, igual q los testos -->
-      <div
-        class="lg:w-5/12 sm:w-3/5 w-full sm:px-0 px-10 text-center text-white font-semibold absolute inset-y-14 sm:inset-x-32 mt-10">
-        <h1 class="text-4xl">ESLOGAN LLAMATIVO</h1>
-        <p class="my-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis laborum non quidem alias ipsa
-          veritatis quibusdam animi unde, iste dolor placeat molestiae dolorem aspernatur beatae. </p>
-        <button class="bg-pink-400 rounded-3xl py-2 px-10">¡Contáctanos!</button>
+      <div class="lg:w-7/12 sm:w-3/5 sm:px-0 px-10 text-center text-white font-semibold mx-auto z-10">
+        <h1 class="text-6xl">La nueva generación en centros de belleza...</h1>
+        <p class="my-4">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis laborum non quidem alias ipsa veritatis quibusdam animi unde, iste dolor placeat molestiae dolorem aspernatur beatae.
+        </p>
+        <button class="bg-pink-400 text-lg rounded-3xl py-2 px-10 shadow hover:bg-pink-500 transition-colors">¡Contáctanos!</button>
       </div>
-      <div class="flex justify-center">
-        <div class="w-[60%] h-20 absolute bg-heroCard bg-cover inset-y-80"></div>
-        <div
-          class="w-3/5 lg:h-[22.5rem] md:h-[17.5rem] h-[22.5rem] bg-slate-50 rounded-3xl rounded-t-none absolute inset-y-96 shadow-2xl px-10">
-          <div class="grid lg:grid-cols-2 items-center">
-            <div class="h-[22rem] overflow-hidden">
+      <div class="z-10 absolute w-3/5 top-[65%]">
+        <div class="h-20 bg-fondo-card bg-cover"></div>
+        <div class="bg-white rounded-3xl rounded-t-none shadow-xl">
+          <div class="flex gap-4 px-4 pb-4">
+            <div class="w-full h-full lg:w-3/5 p-8 pt-4">
               <h4 class="text-pink-400 text-center text-2xl font-bold">Sobre Nosotros</h4>
-              <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sed exercitationem
-                ratione, totam, saepe aliquid commodi dignissimos officia mollitia tempora dolorem eveniet laboriosam
-                mas meu deus caraho jodelho y esas cosas.</p>
-              <h4 class="text-pink-400 text-center text-2xl font-bold pt-5">horarios</h3>
+              <p class="text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sed exercitationem ratione, totam, saepe aliquid commodi dignissimos officia mollitia tempora dolorem eveniet laboriosam mas meu deus caraho jodelho y esas cosas.
+              </p>
+              <h4 class="text-pink-400 text-center text-2xl font-bold pt-5">Horarios</h3>
                 <div class="flex justify-between">
                   <p>Lunes a viernes <br> Sabado a Domingo</p>
                   <p>8am a 3pm <br> 9am a 2pm</p>
                 </div>
             </div>
-            <div class="flex justify-center invisible lg:visible">
-              <img class="h-72 w-3/4 object-cover rounded shadow" src="/images/coso.jpg" alt="imagen">
-            </div>
+            <img class="object-cover rounded shadow h-80 hidden lg:inline" src="/images/coso.jpg" alt="imagen">
           </div>
         </div>
       </div>
     </section>
     <!-- Servicios -->
-    <section class="flex flex-col gap-6 p-[17.5rem] bg-pink-400" id="services">
+    <section class="p-20 pt-60 flex flex-col gap-6 bg-pink-400" id="services">
       <h2 class="flex justify-center text-4xl font-semibold">Servicios</h2>
       <div class="flex gap-6">
         <div class="flex flex-col items-center gap-6">
-          <img src="public/images/nails.jpg" alt="uñas" class="h-40 w-40 rounded-full">
+          <img src="/images/nails.jpg" alt="uñas" class="h-40 w-40 rounded-full">
           <h3 class="text-3xl font-semibold">Uñas</h3>
           <p class="text-1xl text-center font-semibold">Lorem ipsum Lorem ipsum
             Lorem ipsum Lorem ipsum
@@ -87,7 +74,7 @@
         </div>
 
         <div class="flex flex-col items-center gap-6">
-          <img src="public/images/peluquería.jpg" alt="peluquería" class="h-60 w-60 rounded-full">
+          <img src="/images/peluquería.jpg" alt="peluquería" class="h-60 w-60 rounded-full">
           <h3 class="text-3xl font-semibold">Peluquería</h3>
           <p class="text-1xl text-center font-semibold">Lorem ipsum Lorem ipsum
             Lorem ipsum Lorem ipsum
@@ -96,7 +83,7 @@
         </div>
 
         <div class="flex flex-col items-center gap-6">
-          <img src="public/images/depi.png" alt="depilación" class="h-40 w-40 rounded-full">
+          <img src="/images/depi.png" alt="depilación" class="h-40 w-40 rounded-full">
           <h3 class="text-3xl font-semibold">Depilación</h3>
           <p class="text-1xl text-center font-semibold">Lorem ipsum Lorem ipsum
             Lorem ipsum Lorem ipsum
@@ -104,10 +91,9 @@
           </p>
         </div>
       </div>
-      <div class="pt-56"></div>
     </section>
+    <!-- Nuestro trabajo -->
     <section class="p-20" id="galery">
-      <!-- Nuestro trabajo -->
       <!-- TODO -> añadir unas cards con fotos y tal debajo del carrusel pa que no se vea tan simple esta sección -->
       <div class="flex items-center px-28 gap-2">
         <img class="bg-pink-400 w-12 h-12 rounded-full p-2" src="/icons/book.svg">
@@ -223,8 +209,8 @@
         </button>
       </div>
     </section>
+    <!-- Contáctanos -->
     <section class="p-20 bg-pink-400 text-white shadow-lg" id="contact-us">
-      <!-- Contáctanos -->
       <div class="flex items-center px-28 gap-2">
         <img class="bg-white w-12 h-12 rounded-full p-2" src="/icons/chat.svg">
         <div>
