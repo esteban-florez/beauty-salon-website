@@ -19,3 +19,7 @@
   background-image: url('/images/hero.jpg');
   background-size: cover;
 }
+
+.btn {
+  @apply normal-case text-base;
+}

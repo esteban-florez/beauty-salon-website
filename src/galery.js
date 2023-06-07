@@ -1,4 +1,4 @@
-import Slide from './Slide.js'
+import Slide from './classes/Slide.js'
 
 const slideElements = Array.from(document.querySelectorAll('[data-slide]'))
 const slides = slideElements.map(element => new Slide(element))

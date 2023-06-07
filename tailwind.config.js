@@ -1,8 +1,10 @@
+import daisyui from 'daisyui'
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
-    "./src/*/.js"
+    './index.html',
+    './src/**/*.js'
   ],
   theme: {
     extend: {
@@ -11,10 +13,13 @@ export default {
       },
 
       backgroundImage: {
-        'fondo-card': "url('/images/fondo-card.png')",
+        'fondo-card': 'url(/images/fondo-card.png)',
       },
     },
   },
-  plugins: [],
+  plugins: [daisyui],
+  daisyui: {
+    themes: ['light'],
+  }
 }
 

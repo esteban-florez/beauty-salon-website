@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Peluquería "Jeanelly Adames"</title>
-  <script type="module" src="./src/index.js"></script>
+  <script type="module" src="./main.js"></script>
 </head>
 
 <body>
@@ -102,7 +102,7 @@
           <h3 class="uppercase text-pink-400 font-bold tracking-tighter">Nuestro trabajo</h3>
         </div>
       </div>
-      <div class="bg-pink-400 w-4/5 mx-auto mt-10 py-10 px-6 shadow-xl rounded-lg flex items-center justify-between">
+      <div class="bg-pink-400 w-4/5 max-w-4xl mx-auto mt-10 py-10 px-6 shadow-xl rounded-lg flex items-center justify-between">
         <button class="bg-white rounded-lg shadow-lg disabled:brightness-75 disabled:shadow-none transition-all"
           id="prev">
           <img class="w-16 pointer-events-none" src="/icons/chevron-left.svg">
@@ -219,7 +219,7 @@
         </div>
       </div>
       <div class="flex gap-8 justify-between items-center max-w-4xl mx-auto mt-10">
-        <form class="bg-white text-black w-1/2 rounded-xl shadow-lg p-6 flex flex-col gap-6">
+        <form class="bg-white text-black w-1/2 rounded-xl shadow-lg p-6 flex flex-col gap-6" id="contact-form">
           <div>
             <label class="flex items-center gap-1 font-semibold text-pink-500 mb-2" for="name">
               <img class="h-6 w-6" src="/icons/user-circle.svg">
@@ -243,11 +243,11 @@
           </div>
           <div>
             <label class="flex items-center gap-1 font-semibold text-pink-500 mb-2" 
-            for="feedback">
+            for="review">
               <img class="h-6 w-6" src="/icons/chat-bubbles.svg">
               ¿Que quieres comentarnos?
             </label>
-            <textarea class="bg-gray-200 shadow-inner rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 py-2 px-4 w-full resize-none" rows="3" name="feedback" id="feedback" placeholder="Escribe tus sugerencias, opiniones o ideas..."></textarea>    
+            <textarea class="bg-gray-200 shadow-inner rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 py-2 px-4 w-full resize-none" rows="3" name="review" id="review" placeholder="Escribe tus sugerencias, opiniones o ideas..."></textarea>    
           </div>
           <button class="bg-pink-400 text-white rounded-lg py-3 text-xl font-semibold flex items-center justify-center transition-colors group gap-1 hover:bg-pink-500 shadow-xl active:bg-pink-600 focus:outline-none focus:ring focus:ring-pink-300" type="submit">
             <svg class="h-6 w-6 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
@@ -269,30 +269,15 @@
               <p class="font-semibold text-xl">¡Escanea nuestro código QR para comunicarte con nosotros!</p>
             </div>
           </div>
-          <div class="shadow-lg rounded-xl p-4 flex flex-col text-black bg-gray-100">
+          <div class="shadow-lg rounded-xl p-4 flex flex-col text-black bg-gray-200">
             <div class="h-1/4 bg-instagram rounded-t-xl flex w-full justify-center shadow-md">
-              <img class="w-32 h-32 rounded-full object-cover translate-y-16 bg-white p-1" src="/images/ponytail.jpg" alt="Foto de Perfil de Instagram">
+              <img class="w-28 h-28 rounded-full object-cover translate-y-14 bg-white p-1" src="/images/logo-header.jpg" alt="Foto de Perfil de Instagram">
             </div>
-            <div class="h-3/4 rounded-b-xl pt-16 overflow-hidden bg-white shadow-md">
-              <a class="text-3xl block font-semibold text-center  text-blue-500 hover:underline" href="https://www.instagram.com/instagram/" target="_blank" rel="noopener noreferrer">
+            <div class="h-3/4 rounded-b-xl pt-14 overflow-hidden bg-white shadow-md">
+              <a class="text-3xl block font-semibold text-center text-blue-500 hover:underline" href="https://www.instagram.com/instagram/" target="_blank" rel="noopener noreferrer">
                 @peluqueriajeanelly
               </a>
-              <p class="text-center mb-2 font-semibold">¡Síguenos en nuestra cuenta de Instagram!</p>
-              <div class="flex w-full justify-between py-4 px-6">
-                <div class="flex flex-col items-center">
-                  <img class="w-6 h-6" src="/icons/newspaper.svg">
-                  <p class="font-bold">
-                    737 publicaciones
-                  </p>
-                </div>
-                <div class="border-l-2 border-gray-300 mx-4"></div>
-                <div class="flex flex-col items-center">
-                  <img class="w-6 h-6" src="/icons/user.svg">
-                  <p class="font-bold">
-                    304 seguidores
-                  </p>
-                </div>
-              </div>
+              <p class="text-center mt-2 mb-4 font-semibold">¡Síguenos en nuestra cuenta de Instagram!</p>
             </div>
           </div>
         </div>
@@ -337,5 +322,10 @@
       Peluquería "Jeanelly Adames" | Todos los derechos reservados.
     </div>
   </footer>
+  <dialog class="modal" id="result-modal">
+    <div class="modal-box grid place-items-center">
+      
+    </div>
+  </dialog>
 </body>
 </html>
